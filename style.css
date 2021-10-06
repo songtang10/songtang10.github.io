@@ -1,0 +1,131 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.topnav {
+  height: 80px;
+  background-color: #CDA682;
+  overflow: hidden;
+  align-items: center;
+}
+
+/* Style the links inside the navigation bar */
+.right-nav a {
+  float: right;
+  align-items: center;
+  color: #f2f2f2;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  text-align: center;
+  padding: 31px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.left-nav {
+  float: left;
+  margin-top: 30px;
+  font-family: "Galada";
+  font-size: 24px;
+  color: white;
+}
+
+/* Change the color of links on hover */
+.right-nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #907359;
+  color: white;
+}
+
+.header {
+    background-image: url('images/headerbackground.jpg'); 
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header-text {
+    font-family: "Galada";
+    text-align: left;
+    position: absolute;
+    top: 140px;
+    left: 200px;
+    color: white;}
+
+.header button {
+    position: absolute;
+    top: 200px;
+    background-color: #907359;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.2s;
+}
+
+.header button:hover{
+    background-color: white; /* Green */
+  color: black;
+}
+
+.order-now {
+  height: 900px;
+  background:white;
+}
+
+#order-title {
+    height: 60px;
+    width: 615px; 
+    font-family: "roboto";
+    text-align: center;
+    display: grid;
+    align-content: center;
+    margin: 45px auto;
+    font-size: 20px;
+    color: white;
+    background-color: #CDA682;
+}
+.row {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.individual-product {
+  
+  float: left;
+  text-align: center;
+  width: 33.3%;
+}
+
+#product-image-preview {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#flavor h2{
+  font-family: "roboto";
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+
+/* table {
+  margin: auto;
+  width: 90%;
+}
+
+td {
+  text-align: center} */
