@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bun Bun Bake Shop</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Galada&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- This part is about the top naavigation bar -->
+        <div class="topnav">
+            <div class="right-nav">
+                <a class="cart">
+                    <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.78137 4.46863L6.64137 4.96363L7.9655 20.739C8.07137 22.0274 9.148 23.016 10.4405 23.0119H25.4404C26.6737 23.0146 27.7201 22.1071 27.8947 20.8861L29.1996 11.8689C29.3454 10.861 28.6455 9.926 27.639 9.78025C27.551 9.76788 7.10062 9.761 7.10062 9.761" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M19.422 14.8429H23.2349" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.83729 27.7784C10.2512 27.7784 10.5853 28.1139 10.5853 28.5264C10.5853 28.9403 10.2512 29.2758 9.83729 29.2758C9.42342 29.2758 9.08929 28.9403 9.08929 28.5264C9.08929 28.1139 9.42342 27.7784 9.83729 27.7784Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.3477 27.7784C25.7616 27.7784 26.0971 28.1139 26.0971 28.5264C26.0971 28.9403 25.7616 29.2758 25.3477 29.2758C24.9339 29.2758 24.5997 28.9403 24.5997 28.5264C24.5997 28.1139 24.9339 27.7784 25.3477 27.7784Z" fill="white" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>  
+                </a>
+                <a class="user-profile">
+                    <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9784 21.101C11.4993 21.101 6.82025 21.9051 6.82025 25.1252C6.82025 28.3453 11.4696 29.1782 16.9784 29.1782C22.4576 29.1782 27.1352 28.3728 27.1352 25.154C27.1352 21.9352 22.4872 21.101 16.9784 21.101Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9784 16.5081C20.574 16.5081 23.4883 13.6782 23.4883 10.1884C23.4883 6.69847 20.574 3.8699 16.9784 3.8699C13.3828 3.8699 10.4671 6.69847 10.4671 10.1884C10.455 13.6665 13.3504 16.4963 16.9325 16.5081H16.9784Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                    
+                </a>
+                <a class="search">
+                    <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="13.3404" cy="13.3404" r="9.82979" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M20.3617 21.0638L26.6808 27.383" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                    
+                </a>
+                <a href="contact-us">CONTACT US</a>
+                <a href="about-us">ABOUT US</a>
+                <a href="#order-now">ORDER NOW</a>
+                <a class="active" href="home">HOME</a>
+            </div>
+            <div class="left-nav">
+                <a>Bun Bun Bake Shop</a>
+            </div>
+        </div>
+    </body>
+
+
+
+
+</html>
