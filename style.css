@@ -193,11 +193,14 @@ body a {
 
 #small {
   display: flex;
+  border-radius: 5px;
+}
+
+#small img{
   width: 70px;
   height: 70px;
   object-fit:cover;
   border-radius: 5px;
-  justify-items: stretch;
 }
 
 #small > * {
