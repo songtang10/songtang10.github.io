@@ -44,13 +44,13 @@ function changeQuantity(elmnt) {
     }
 }
 
-// add quantity pop-up icon in navbar 
+//add quantity pop-up icon in navbar 
 function updateBasket() {
     var quantityCircle = document.getElementById("basket-icon-quantity");
     quantityCircle.style.display = "block";
 }
 
-
+// shopping-basket section 
 function minusBun() {
     var bunQuantity = getElementById("basket-quantity")
 }
