@@ -1,5 +1,6 @@
 var glazingFlavor = "none"
 var totalQuantity = 1
+const itemPrice = 3
 
 function changeGlazing(elmnt) {
     const none=document.getElementById('none');

@@ -9,16 +9,17 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Galada&family=Roboto&display=swap" rel="stylesheet">
-      <script defer src="main.js"></script>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="main.js"></script>
   </head>
-
+  
   <body>
-      <!-- This part is about the top naavigation bar -->
-      <div class="topnav">
+    <!-- top navigation bar -->
+    <div class="topnav">
         <div class="right-nav">
             <a href="basket.html" class="basket">
                 <img src="images/shopping-basket.png">
-                <span class="basket-icon-quantity" id="basket-icon-quantity">1</span>
+                <span class="basket-quantity" id="basket-icon-quantity">1</span>
                   
             </a>
             <a class="user-profile">
@@ -42,66 +43,3 @@
             <a href="index.html">Bun Bun Bake Shop</a>
         </div>
     </div>
-
-      <!-- header imager section -->
-      <div class="header">
-          <div class="header-text">
-              <h1>Freshly Baked Cinnamon Buns,<br>
-                Delivered to Your Door!</h1>
-              <!-- when the 'oorder now' button is clicked, the page will automatically scroll down to the product browsing section -->
-              <a href="#order-now"><button>ORDER NOW</button></a>
-          </div>
-      </div>
-
-      <!-- Product Browsing Section -->
-      <div class="order-now" id="order-now">
-          <h1 id="order-title">ORDER OUR SIGNATURE CINNAMON BUNS</h1>
-
-          <div class="rows">
-              <div class="individual-product" id="original">
-                  <div>
-                      <img src="images/bun.png" alt="image of cinnamon bun">
-                      <a href="original.html">
-                          <h2>ORIGINAL</h2>
-                      </a>
-                  </div>
-              </div>
-
-              <div class="individual-product" id="blackberry">
-                  <div>
-                      <img src="images/bun.png" alt="image of cinnamon bun">
-                  </div>
-                  <h2>BLACKBERRY</h2>
-              </div>
-
-              <div class="individual-product" id="walnut">
-                  <div>
-                      <img src="images/bun.png" alt="image of cinnamon bun">
-                  </div>
-                  <h2>WALNUT</h2>
-              </div> 
-
-              <div class="individual-product" id="original(gf)">
-                  <div>
-                      <img src="images/bun.png" alt="image of cinnamon bun">
-                  </div>
-                  <h2>ORIGINAL(GF)</h2>
-              </div>
-
-              <div class="individual-product" id="pumpkin">
-                  <div>
-                      <img src="images/bun.png" alt="image of cinnamon bun">
-                  </div>
-                  <h2>PUMPKIN SPICE</h2>
-              </div>
-
-              <div class="individual-product" id="peacon">
-                  <div>
-                      <img src="images/bun.png" alt="image of cinnamon bun">
-                  </div>
-                  <h2>CARAMEL PEACON</h2>
-              </div>
-          </div>
-      </div>   
-  </body>
-</html>

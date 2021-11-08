@@ -47,13 +47,12 @@ body a {
 }
 
 #basket-icon-quantity {
-  display:none;
   width: 20px;
   height: 20px;
   font-size: 16px;
   position:absolute;
-  top: 30px;
-  left: 1400px;
+  top: 30%;
+  right: 12px;
   background-color: #907359;
   border-radius: 50%;
 }
@@ -310,15 +309,6 @@ body a {
   color: white;
 }
 
-/* .quantity-selection button:focus {
-  background-color: #CDA682;
-  color: white;
-} */
-
-/* .item-price {
-  text-align: right;
-} */
-
 .add-button {
   left: 424px;
   width: 404px;
@@ -450,25 +440,33 @@ hr {
   font-family: "Roboto";
   font-size: 20px;
   position: relative;
+  width:100%;
+  display:flex;
 }
 
 #item-subtitle {
   position:relative;
   top:129px;
 }
-.basket-item {
+
+.item-template {
   display: flex;
   position: relative;
   flex-direction: row;
   align-content: space-between;
   justify-content: space-between;
-  margin:10px 0px;
+  margin-bottom:30px;
 }
 
-.basket-item img {
+#item-template {
+  display: none;
+}
+
+.item-pic {
   position:relative;
   height:100px;
   width:100px;
+  margin-right: 10px;
   object-fit:cover;
   border-radius: 5px;
 }
@@ -487,17 +485,17 @@ hr {
   flex-direction: column;
   justify-content: space-between;
 }
+
 .basket-detail-right {
   align-items: flex-end;
 }
 
 
-.basket-quantity span {cursor:pointer; }
 
 .number{
   margin:100px;
 }
-.minus, .plus{
+#minus, #plus{
   width:23px;
   height:25px;
   background:#CDA682;
@@ -509,8 +507,9 @@ hr {
   vertical-align: middle;
   text-align: center;
 }
+.item-quantity span {cursor:pointer; }
 
-.basket-quantity input{
+.item-quantity {
   height:25px;
   width: 52px;
   text-align: center;
@@ -521,11 +520,13 @@ hr {
   vertical-align: middle;
 }
 
+.remove-button {
+  cursor: pointer;
+}
 .basket-bottom-right{
   width:402px;
-  right:200px;
-  top: 600px;
-  position:fixed;
+  /* top: 600px; */
+  position:relative;
 }
 .subtotal{
   display: grid;

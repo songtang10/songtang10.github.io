@@ -9,7 +9,8 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Galada&family=Roboto&display=swap" rel="stylesheet">
-      <script src="main.js"></script>
+      <script defer src="main.js"></script>
+      <!-- <meta http-equiv="refresh" content="1"> -->
   </head>
   
   <body>
@@ -18,8 +19,7 @@
         <div class="right-nav">
             <a href="basket.html" class="basket">
                 <img src="images/shopping-basket.png">
-                <span class="basket-quantity" id="basket-icon-quantity">1</span>
-                  
+                <span class="basket-quantity" id="basket-icon-quantity">0</span>
             </a>
             <a class="user-profile">
                 <svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,6 +43,7 @@
         </div>
     </div>
 
+<!-- main page contents -->
       <div class="basket-detail-main">
           <div class="back-button">
               <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -50,37 +51,42 @@
               </svg>
               <span><a href="index.html">CONTINUE SHOPPING</a></span>
           </div>
-          <div id="basket-title"> YOUR BASKET</div>
-          <!-- <span id="item-subtitle">ITEM</span> -->
+          <div id="basket-title"> YOUR BASKET: <span id="cart-number">0</span> ITEMS</div>
           <div>
               <hr>
           </div>
-
-          <div class="basket-item">
-              <img src="images/bun.png">
-              <div class='basket-item-detail'>
-              <div class="basket-detail-left"> 
-                  <span class="basket-item-name">Original Cinnamon Bun</span>
-                  <div class="basket-quantity">
-                      <span class="minus">-</span>
-                      <input id="basket-quantity" type="text" value="1"/>
-                      <span class="plus">+</span>
+          <div id="cart-list">
+              <div class="item-template" id="item-template">
+                  <img class="item-pic" src="images/bun.png">
+                  <div class='basket-item-detail'>
+                  <div class="basket-detail-left"> 
+                      <span class="item-name">Original Cinnamon Bun</span>
+                      <div>Glazing: <span class="item-glaze">None</span></div>
+                      <div>
+                          <div id="minus">-</div>
+                          <span class="item-quantity" value="1">1</span>
+                          <div id="plus">+</div>
+                      </div>
                   </div>
-              </div>
-              <div class="basket-detail-right"> 
-                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <line x1="1.01643" y1="1.65593" x2="14.6533" y2="15.2928" stroke="#907359" stroke-width="2"/>
-                      <line x1="0.929612" y1="14.9299" x2="14.5665" y2="1.29294" stroke="#907359" stroke-width="2"/>
-                  </svg>
-                  <span class="basket-item-price">$ 3</span>
-              </div>
-          </div>
+                  <div class="basket-detail-right"> 
+                      <div class="remove-button" id="remove-button">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="1.01643" y1="1.65593" x2="14.6533" y2="15.2928" stroke="#907359" stroke-width="2"/>
+                            <line x1="0.929612" y1="14.9299" x2="14.5665" y2="1.29294" stroke="#907359" stroke-width="2"/>
+                        </svg>
+                      </div>
+                      <span class="item-price">$ 3</span>
+                  </div>
+                </div>
+
+            </div>
+          
       </div>
 
       <div class="basket-bottom-right">
           <div class="subtotal">
               <div id="text">SUBTOTAL</div>
-              <div id="subtotal-price">$ 3</div>
+              <div id="subtotal-price">$ 0</div>
               <div id="text">SHIPPING</div>
               <div id="shipping-price">calculated at checkout</div>
           </div>
