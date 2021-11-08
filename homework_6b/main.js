@@ -20,7 +20,6 @@ function changeGlazing(elmnt) {
         }
         else {}
     }
-        
 } 
 
 function changeQuantity(elmnt) {
@@ -28,6 +27,7 @@ function changeQuantity(elmnt) {
     const three=document.getElementById('3');
     const six=document.getElementById('6');
     const twelve=document.getElementById('12');
+    const productDetailPrice=document.getElementById('product-detail-price');
     for ( let quantity of [one, three, six, twelve]) {
         quantity.style.background = "white";
         quantity.style.color = "#907359";
@@ -38,6 +38,7 @@ function changeQuantity(elmnt) {
             quantity.style.background = "#907359";
             quantity.style.color = "white";
             totalQuantity = quantity.id
+            productDetailPrice.innerHTML=quantity.id*unitPrice;
         }
         else {}
     }
@@ -62,14 +63,12 @@ function removeItem(obj) {
       if (ind !== -1) {
         // remove item from the list
         cartItems.splice(ind, 1)
-        // update the stored value
         console.log(cartItems)
         localStorage.setItem("cartItems", JSON.stringify(cartItems))
         console.log(localStorage.getItem("cartItems"))
-        // re-render the page to reflect changes
         location.reload()
         updateCart()
-        console.log("remove display")
+        //console.log("remove display")
       }
     }
 }
@@ -147,7 +146,7 @@ function updateCart() {
                 quantityElement.innerHTML = cartItem.quantity;
                 const priceElement = productElement.getElementsByClassName("item-price")[0];
                 priceElement.innerHTML = '$' + unitPrice*cartItem.quantity;
-                
+                // remove item after clicking the remove button
                var removeBtn = productElement.getElementsByClassName("remove-button")[0];
                //removeBtn.onclick = removeItem(cartItem)
                removeBtn.onclick = (function (cartItem) {
