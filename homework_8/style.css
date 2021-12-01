@@ -1,0 +1,19 @@
+#about{
+    height: 880px;
+    display: flex;
+    align-items: center;
+    background-image: url("Assets/images/about-background.png");
+    background-size: 1440px 880px;
+}
+
+#projects{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer-right{
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+}
+
