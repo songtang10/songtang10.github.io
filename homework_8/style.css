@@ -1,19 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    font-family:'Nunito';
+}
+p{
+    font-size:16px;
+}
+
+h2{
+    font-family:"Poppins";
+    font-weight: 600;
+    font-size: 28px;
+    color: #5E8AC6;
+}
+
 #about{
-    height: 880px;
-    display: flex;
+    display:flex;
     align-items: center;
-    background-image: url("Assets/images/about-background.png");
-    background-size: 1440px 880px;
+    /* background-image: url("Assets/images/about-background.png"); */
+    background-color: #E4DACF;
+    /* background-size: 1440px 880px; */
+    justify-content: center;
+}
+
+#about-content{
+    /* max-height: 600px; */
+    justify-content: center;
+    margin:60px 30px;
+}
+
+#about-title{
+    margin-bottom:1.5rem;
+}
+
+#about-text{
+    margin-top:3rem;
 }
 
 #projects{
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     justify-content: space-evenly;
 }
 
 .footer-right{
     display:flex;
-    align-items: center;
+    align-items:center;
     flex-direction:column;
 }
+.footer-right p, .footer-right span{
+    font-size:12px;
+    color: #6c757d;
+}
 
+.backbtn{
+    background:none;
+    border:none;
+    top:10%;
+    position:absolute;
+    color:white;
+    align-content: center;
+}
+
+.topimg{
+    z-index:-1;
+}
+
+.summary{
+    margin-top:15px;
+}
+
+.summary-title{
+    font-family:"Poppins";
+    font-weight: 600;
+    font-size: 20px;
+    color: #5E8AC6;
+}
+
+.summary-title-light{
+    font-weight:500;
+    color:#5E8AC6;
+    font-size: 20px;
+}
+
+.main-sec{
+    margin-top:60px;
+    margin-bottom:60px;
+}
+
+.col{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#btn-back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #5E8AC6;
+    color: white;
+}

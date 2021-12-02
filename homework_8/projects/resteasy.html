@@ -1,69 +1,279 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css"> 
-    <title>Tia Tang</title>
-  </head>
 
-  <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../main.js" defer></script>
+  <title>Tia Tang</title>
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
     <div class="container">
-        <a class="navbar-brand" href="#">
-        <img src="Assets/images/logo.png" alt="Logo of Tia Tang" height="30">
+      <a class="navbar-brand" href="#">
+        <img src="../Assets/images/logo.png" alt="Logo of Tia Tang" height="30">
         Tia Tang
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="#">PROJECTS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">RESUME</a>
-            </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">RESUME</a>
+          </li>
         </ul>
-        </div>
-    </div>
-    </nav>
-
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-              <img src="Assets/images/logo.png" alt="Logo of Tia Tang" height="30">
-            </a>
-            <span class="text-muted">© 2023 by Tia Tang.</span>
-          </div>
-      
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-5">
-                <div class="footer-right" id="call">
-                    <span>Call</span>
-                    <p>412-694-3212</p>
-                </div>
-            </li>
-            <li class="ms-5">
-                <div class="footer-right" id="email">
-                    <span>Email</span>
-                    <p>tiatang10@gmail.com</p>
-                </div>
-            </li>
-            
-          </ul>
-        </footer>
       </div>
-    </body>
+    </div>
+  </nav>
 
-</html> 
+  <div class="title">
+    <button class="backbtn resteasy col-md-3">
+      <a href="../index.html">
+        <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 16L1 8.5L9 1" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+        </svg>
+        BACK
+      </a>
+    </button>
+    <img class="img-fluid topimg" src="../Assets/images/resteasy/title-img.png"
+      alt="Image with blue background and prototype display of RestEasy">
+  </div>
+
+<!-- executive summary -->
+  <div class="container summary">
+    <div class="row">
+      <div class="col-md-7">
+        <span class="summary-title">Executive Summary</span>
+        <p>
+          For this project, our team was prompted to design <b>a native mobile app</b> for ResMed. Specifically, the company is
+          interested in bringing about <b>a service orientation to augment the company’s traditional product-centric
+          offerings</b>. Through research and iterative design, the solution our team provided is a smart, comprehensive
+          platform that integrates Resmed’s sleep products with a mobile-first, software ecosystem that <b>connects patients,
+          physicians and caretakers in a disconnected world for more effective remote care.</b>
+        </p>
+      </div>
+      <div class="col-md-2 offset-md-1">
+        <span class="summary-title">Role</span>
+        <p>
+          UX Designer<br>
+          User Researcher
+        </p>
+      </div>
+      <div class="col-md-2">
+        <div>
+          <span class="summary-title-light">Duration</span>
+          <p>4 Weeks</p>
+        </div>
+        <div>
+          <span class="summary-title-light">Team</span>
+          <p>Ji Park, Mansi Agarwal, 
+            Shai Bhardwaj, Janelle Wen
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- domain research -->
+  <div class="container main-sec">
+    <h2 class="row">Domain Research</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p>
+          ResMed is a leader in cloud-connected medical devices that help patients with sleep apnea, Chronic Obstructive Respiratory Disease (COPD) and other chronic respiratory diseases. They offer software and hardware platforms to support patients, medical professionals and caregivers to help patients stay healthy in their homes or care settings.
+        </p>
+        <p>
+          ResMed’s ecosystem combines connected devices and their software platform to create a holistic ecosystem for patient ventilation monitoring. Their current offering includes:<br>
+          <ol>
+            <li>Sleep Machines - CPAP, APAP and Ventilators</li>
+            <li>Patient Management Software - Airview, RDX and ReSupply</li>
+            <li>Consumer Platforms - myAir, AirView mobile apps</li>
+          </ol>
+        </p>
+      </div>
+      <div class="col-md-6 order-1">
+        <img class="img-fluid" src="../Assets/images/resteasy/product-ecosystem.png" alt="visualization of ResMed's product ecosystem">
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- stakeholder analysis -->
+  <div class="container main-sec">
+    <h2 class="row">Stakeholder Analysis</h2>
+    <div class="row">
+      <div class="col-md-7 order-1">
+        <img class="img-fluid" src="../Assets/images/resteasy/stakeholder map.png" alt="visualization of ResMed's stakeholders">
+      </div>
+      <div class="col-md-5 order-2 my-auto">
+        <p class="row">
+          To understand the ResMed ecosystem better, I identified 9 key stakeholders, their goals, needs and other attributes, while keeping a focus on their jobs-to-be-done.
+        </p>
+        <p class="row">
+          I noticed that communication between direct stakeholders in patient care (Patient Support, Providers, ResMed Internal) was lacking and was a good space to create a service in.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container main-sec">
+    <h2 class="row">Design Brief</h2>
+    <div class="row align-items-center">
+      <div class="col-md-4 order-1">
+        <p class="row">
+          After stakeholder mapping, we created design briefs to delve into the possible ways our native app could help each stakeholder in our map. As a team, we voted to decided on our top three design briefs. The first two were in the perspective of the patient, and the last one was in the perspective of the caretaker / loved one. This initiated a discussion on who the main user should be, and how we can best cater to them. The idea of connectedness (especially during the pandemic), became a  main goal of our app. 
+        </p>
+      </div>
+      <div class="col-md-8 order-1">
+        <img class="img-fluid" src="../Assets/images/resteasy/design brief voting.png" alt="screenshot of design briefs">
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="container main-sec">
+    <h2 class="row">User Flow</h2>
+    <p class="row">
+      Before diving into building our wireframes, I made a list of tasks that we wanted our user to be able to complete. This would serve as a rough outline for our user flow, which mapped how the user could progress from one step to another.
+    </p>
+    <div class="row align-items-center">
+      <ul class="col-md-4">
+        Tasks Lists:
+        <li>Connect machine</li>
+        <li>Read Health of the machine Check nightly sleep</li>
+        <li>Set contacts</li>
+        <li>Export data to family, caretaker, or doctor</li>
+        <li>Check progress overtime</li>
+      </ul>
+      <div class="col-md-8 order-2">
+        <img class="img-fluid" src="../Assets/images/resteasy/task list.png" alt="screenshot of design briefs">
+      </div>
+    </div>
+  </div>
+
+  <div class="container main-sec">
+    <h2 class="row">Design Iterations</h2>
+    <div class="row align-items-top">
+      <div class="col-md-4">
+        <div class="row">
+          <span class="summary-title-light">1. Sketches</span>
+        </div>
+        <img class="img-fluid" src="../Assets/images/resteasy/sketches.png" alt="design sketches">
+        <div class="row">
+          <p>After sketching and creating the wireframes for the design, we received some critiques:</p>
+          <ul>
+            <li>What value is being added that the current ResMed app does not provide?</li>
+            <li> Because this is a native app, what existing data streams are available? Think about camera, location, and haptics to enhance the patient’s experience.</li>
+            <li>In Onboarding, the patient should be able to elect an emergency contact. </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <span class="row summary-title-light">2. Wireframes</span>
+        <img src="../Assets/images/resteasy/wireframes.png" alt="wireframs of the RestEasy prototype" class="img-fluid">
+      </div>
+    </div>
+    <div class="row align-items-center">
+      <span class="row summary-title-light">3. Mid-Fidelity Prototype</span>
+    </div>
+    <p class="row">
+      Based on the wireframes, I then focused on flushing out the user-flow of our app. In response to previous feedbacks, I included a complete onboarding experience for setting up the account and allowing for data collection. I also incorporated more native functions of the phone such as face ID, location data, fall detection,etc.   
+    </p>
+    <img src="../Assets/images/resteasy/midfi.png" alt="Mid-fidelity prototype design for RestEasy" class="row col-8 offset-md-2 img-fluid">
+  </div>
+
+  <div class="container main-sec">
+    <h2 class="row">Final Design Solution</h2>
+    <div class="row">
+      <span class="row summary-title-light">Onboarding</span>
+      <div class="row">
+        <p>Our app RestEasy uses mobile navigation functions such as camera, face ID, location data, etc. As a result, the onboarding experience is an essential design decision that helps us to <b>establish a friendly and approachable tone</b> in order to encourage our users to grant us access to this data.</p>
+      </div>
+      <div class="row">
+        <img src="../Assets/images/resteasy/onboarding.png" alt="onboarding screen design" class="img-fluid col-8 offset-md-2">
+      </div>
+    </div>
+
+    <div class="row">
+      <span class="row summary-title-light">ResMed AI</span>
+      <div class="row">
+        <p>From last critique, people see potential in <b>providing more value to the users through ResMed AI</b>. For the final design, we reimagined ResMed AI to better serve as an automated conversation mediator. By recognizing key data metrics and conversation keywords, the AI chat bot can automatically provide the corresponding data and suggestions for the users. This will effectively reduce friction among user interactions.    </p>
+      </div>
+      <div class="row">
+        <img src="../Assets/images/resteasy/resmed AIresmedAI.png" alt="resmed AI screen design" class="img-fluid col-10 offset-md-1">
+      </div>
+    </div>
+  
+    <div class="row">
+      <span class="row summary-title-light">Other Key Features</span>
+      <div class="row">
+        <p>Due to the scope of this project, I chose to mainly flush out the onboarding and messaging portion of this app. Overall, oour team have managed to build out a relatively comprehensive mobile application that bridges the current gaps within the ResMed ecosystem. We believe that <b>our design further adds to ResMed’s SaaS(software as a service) solutions.</b></p>
+      </div>
+      <div class="row">
+        <img src="../Assets/images/resteasy/other features.png" alt="resmed AI screen design" class="img-fluid col-10 offset-md-1">
+      </div>
+    </div>
+  </div>
+
+<button type="button"
+    class="btn btn-floating btn-sm" id="btn-back-to-top">
+      Back to Top
+    </button>
+
+
+
+
+
+  <!-- Footer -->
+  <div class="container">
+    <footer class="row justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-8 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          <img src="../Assets/images/logo.png" alt="Logo of Tia Tang" height="30">
+        </a>
+        <span class="text-muted">© 2023 by Tia Tang.</span>
+      </div>
+      <div class="footer-right col-md-2" id="call">
+        <span>Call</span>
+        <p>412-694-3212</p>
+      </div>
+      <div class="footer-right col-md-2" id="email">
+        <span>Email</span>
+        <p>tiatang10@gmail.com</p>
+      </div>
+      <!-- <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-5">
+          
+        </li>
+        <li class="ms-5">
+          <div class="footer-right" id="email">
+            <span>Email</span>
+            <p>tiatang10@gmail.com</p>
+          </div>
+        </li> -->
+
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>
