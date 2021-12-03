@@ -1,8 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
 
+:root{
+    --Main:#B982FF;
+    --Title:#5E8AC6;
+  }
+  
 *{
     font-family:'Nunito';
 }
+
+html {
+    scroll-behavior: smooth;
+  }
+body a{
+    text-decoration: none;
+    color:none;
+}
+
+.page-content{
+    background: linear-gradient(328deg, #ffffff, #f7ece1, #e7d3ff);
+    background-size: 600% 600%;
+    animation: backgroundGradient 31s ease infinite;
+}
+
 p{
     font-size:16px;
 }
@@ -11,14 +31,13 @@ h2{
     font-family:"Poppins";
     font-weight: 600;
     font-size: 28px;
-    color: #5E8AC6;
+    color: var(--Title);
 }
 
 #about{
     display:flex;
     align-items: center;
     /* background-image: url("Assets/images/about-background.png"); */
-    background-color: #E4DACF;
     /* background-size: 1440px 880px; */
     justify-content: center;
 }
@@ -33,6 +52,23 @@ h2{
     margin-bottom:1.5rem;
 }
 
+.about-btn{
+    font-size: 14px;
+    font-weight: 500;
+    background-color: var(--Main);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.about-btn:hover{
+    color: var(--Main);
+    background-color: white;
+    border-color: var(--Main);
+}
+
 #about-text{
     margin-top:3rem;
 }
@@ -42,6 +78,9 @@ h2{
     justify-content: space-evenly;
 }
 
+.project-overview img{
+    border-radius: 10px;
+}
 .footer-right{
     display:flex;
     align-items:center;
@@ -55,11 +94,17 @@ h2{
 .backbtn{
     background:none;
     border:none;
-    top:30%;
+    top:80px;
     position:absolute;
     color:white;
     align-content: center;
+    z-index:1;
 }
+
+.backbtn a{
+    color:white;
+}
+
 
 .topimg{
     z-index:-1;
@@ -73,12 +118,12 @@ h2{
     font-family:"Poppins";
     font-weight: 600;
     font-size: 20px;
-    color: #5E8AC6;
+    color: var(--Title);
 }
 
 .summary-title-light{
     font-weight:500;
-    color:#5E8AC6;
+    color:var(--Title);
     font-size: 20px;
 }
 
@@ -98,6 +143,14 @@ h2{
     bottom: 20px;
     right: 20px;
     display: none;
-    background-color: #5E8AC6;
+    background-color: var(--Title);
     color: white;
 }
+
+
+@keyframes backgroundGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
