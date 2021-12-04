@@ -21,7 +21,7 @@ body a{
 .page-content{
     background: linear-gradient(328deg, #ffffff, #f7ece1, #e7d3ff);
     background-size: 600% 600%;
-    animation: backgroundGradient 31s ease infinite;
+    animation: backgroundGradient 20s ease infinite;
 }
 
 p{
