@@ -102,13 +102,13 @@ ol, ul{
     border:none;
     top:80px;
     position:absolute;
-    color:white;
+    color:var(--Title);
     align-content: center;
     z-index:1;
 }
 
 .backbtn a{
-    color:white;
+    color:var(--Title);
 }
 
 
@@ -120,14 +120,14 @@ ol, ul{
     margin-top:15px;
 }
 
-.h3{
+.summary-title{
     font-family:"Poppins";
     font-weight: 600;
     font-size: 20px;
     color: var(--Title);
 }
 
-.h4{
+.summary-title-light{
     font-weight:500;
     color:var(--Title);
     font-size: 20px;
