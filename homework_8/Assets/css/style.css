@@ -2,8 +2,8 @@
 
 
 :root{
-    --Main:#B982FF;
-    --Title:#5E8AC6;
+    --Main:#6800F0;
+    --Title:#144994;
   }
   
 *{
@@ -120,14 +120,14 @@ ol, ul{
     margin-top:15px;
 }
 
-.summary-title{
+.h3{
     font-family:"Poppins";
     font-weight: 600;
     font-size: 20px;
     color: var(--Title);
 }
 
-.summary-title-light{
+.h4{
     font-weight:500;
     color:var(--Title);
     font-size: 20px;
